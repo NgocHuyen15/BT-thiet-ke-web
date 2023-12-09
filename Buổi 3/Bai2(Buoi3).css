@@ -1,0 +1,124 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #2fa1b3;
+  }
+  .navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 0;
+  }
+  .navbar a:hover {
+    background-color: #2b94a5;
+    color: white;
+  }
+  .navbar a:last-child {
+    margin-left: auto;
+  }
+  .navbar .menu-icon {
+    font-size: 18px;
+  }
+  .bm_LG.bm_VB a {
+    height: 20px;
+    padding: 0 8px;
+    margin: 0 4px;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 10px;
+    border: 1px solid hsla(0,0%,100%,.3);
+    text-transform: none;
+    font-weight: 400;
+    text-align: center;
+  }
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+.main {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: auto;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.content_1 {
+    width: 70%;
+    overflow: hidden;
+}
+
+.content_2 {
+    width: 25%;
+}
+
+.content_1_item {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.content_1_item div {
+    width: 32%;
+    overflow: hidden;
+    
+}
+
+.content_1_item div img {
+    width: 100%;
+    /* hieu ung */
+    transform: all 0.3s ease-in-out;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.content_2 div {
+    display: flex;
+    padding-bottom: 15px;
+    /* Du anh khong tran vien khi zoom */
+    overflow: hidden;
+}
+
+.content_2 div img {
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+      /* hieu ung */
+      transform: all 0.3s ease-in-out;
+}
+
+.content_1 img{
+    width: 100%;
+      /* hieu ung */
+      transform: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1360px) {
+    .main {
+        display: block;
+    }
+
+    .content_2 {
+        width: auto;
+    }
+
+    .content_1 {
+        width: auto;
+    }
+    header .header_item ul {
+        display: none;
+    }
+        
+}
+
+img:hover {
+    transform: scale(1.1);
+}
