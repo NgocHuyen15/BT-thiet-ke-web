@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Bai1(b4).css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="https://aurum.nikadevs.com/img/logo-base.png" alt="HTML5 template">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Home 1</a></li>
+                            <li><a href="">Home 2</a></li>
+                            <li><a href="">Home 3</a></li>
+                            <li><a href="">Home 4</a></li>
+                            <li><a href="">Home 5</a></li>
+                            <li><a href="">Home 6</a></li>
+                            <li><a href="">Home 7</a></li>
+                            <li><a href="">Home 8</a></li>
+                            <li><a href="">Home 9</a></li>
+                            <li><a href="">Home 10</a></li>
+                            <li><a href="">Onepage 1</a></li>
+                            <li><a href="">Onepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Features</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Headers</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Headers Light</a></li>
+                                    <li><a href="">Headers Dark</a></li>
+                                    <li><a href="">Headers Base</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                            <li><a href="">Footers</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Footers Light</a></li>
+                                    <li><a href="">Footers Dark</a></li>
+                                    <li><a href="">Footers Base</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Utility</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Utility grid</a></li>
+                                    <li><a href="">Utility visbility</a></li>
+                                    <li><a href="">Utility aligment</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Typography</a></li>
+                            <li><a href="">Animations</a></li>
+                            <li><a href="">Icons</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Templates</a>
+                        <ul class="sub-menu">
+                            <li><a href="">About Company 1</a></li>   
+                            <li><a href="">About Company 2</a></li>
+                            <li><a href="">About Company 3</a></li>
+                            <li><a href="">About Company 4</a></li>
+                            <li><a href="">Services 1</a></li>
+                            <li><a href="">Services 2</a></li>
+                            <li><a href="">Services 3</a></li>
+                            <li><a href="">Services 4</a></li>
+                            <li><a href="">Services 5</a></li>
+                            <li><a href="">Services 6</a></li>
+                            <li><a href="">Services 7</a></li>
+                            <li><a href="">Services 8</a></li>
+                            <li><a href="">Services 9</a></li>
+                            <li><a href="">Services 10</a></li>
+                            <li><a href="">Services 11</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Elemens</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Titlebars - Breadcrumb Right</a></li>
+                            <li><a href="">Titlebars - Breadcrumb Top</a></li>
+                            <li><a href="">Titlebars - Big Breadcrumb Right</a></li>
+                            <li><a href="">Titlebars - Big Breadcrumb Top</a></li>
+                            <li><a href="">Titlebars - Only Breadcrumb</a></li>
+                            <li><a href="">Icon Boxes Horizontal</a></li>
+                            <li><a href="">Icon Boxes Vertical</a></li>
+                            <li><a href="">List Simple</a></li>
+                            <li><a href="">List Icons</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="">Docs</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Docs Map</a></li>
+                            <li><a href="">Quick Start Guide</a></li>
+                            <li><a href="">Credits</a></li>
+                            <li><a href="">Changelog</a></li>
+                            <li><a href="">Theme Structure</a></li>
+                            <li><a href="">Theme Settings</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="noidung">
+        <img src="ảnh bai 1.png" alt="">
+    </div>
+    <div class="kt">
+        <div class="chu">
+            <h3>Want to say Hey or find out more?</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+        </div>
+        <div class="nut">Get a Free Quote</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(function(){
+            // tim tat ca cac li co sub-mennu ve them vao no class has-child
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+</html>
