@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        form {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 2px gray;
+            padding: 20px 0px 20px 40px;
+        }
+        form table tr td input {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+         <h1 style="color: red;">FORM ĐĂNG KÝ</h1>
+         <table >
+            <tr>
+                <td>Họ</td>
+                <td>
+                    <input type='text' name='ho'>
+                </td>
+            </tr> 
+            <tr>
+                <td>Tên</td>
+                <td>
+                    <input type='text' name='ten'>
+                </td> 
+            </tr>
+         </table>  
+         <p>
+            Ngay sinh: Ngày 
+            <select name="Day">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</optio9n>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            Tháng 
+            <select name="month" >
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+            </select>
+            Năm
+            <select name="years" >
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+            </select>
+
+            
+        </p> 
+        
+        <tr>
+           <td>Giới Tính: </td>
+           <td>
+              Nam<input type='radio' name='gioi tinh' checked>
+              Nữ<input type='radio' name='gioi tinh'>
+           </td>
+        </tr>
+        <br>
+        <br>
+
+        <tr>
+            <td>Số điện thoại: </td>
+            <td><input type="number" id="sdt" style="width: 200px;"></td>
+        </tr>
+
+        <p>
+           Sở thích: 
+           <input type='checkbox' id='' name='sothich'>Đọc sách
+           <input type='checkbox' id='' name='sothich'>Xem phim 
+           <input type='checkbox' id='' name='sothich'>Nghe nhạc
+           <input type='checkbox' id='' name='sothich'>Đá bóng
+        </p>
+        
+        <nav style="display:flex;">
+           <p>Khác </p>
+            <div class="form_textarea">
+                <textarea style="height: 30px;" class="form_textarea_item" name="content" cols="30" rows="10" placeholder="khác"></textarea>
+            </div>
+        </nav>
+
+        <input type='submit' id='' name='' value="Submit">
+        <input type='reset' id='' name='' value="Reset">
+    </form>
+</body>
+<script>
+    function validateForm() {
+    var x;
+    x = document.forms["myForm"]["ho"].value;
+    if (x == "") {
+    alert("Vui long nhập họ");
+    return false;
+    }
+
+    x = document.forms["myForm"]["ten"].value;
+    if (x == "") {
+    alert("Vui long nhập ten");
+    return false;
+    }
+    x = document.getElementById("sdt").value;
+    if (x =="" ) {
+    alert("Vui long nhập số điện thoại");
+    return false;
+    }
+    if (x.length != "10") {
+        alert("Vui long nhập đủ số điện thoại");
+        return false;
+    }
+ }
+ </script> 
+</html>

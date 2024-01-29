@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu đa cấp</title>
+  <style>
+    /* CSS cho menu */
+    *{
+        text-decoration: none;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      position: relative;
+      padding: 10px;
+      background-color: #ccc;
+    }
+
+    .menu li:hover {
+      background-color: #aaa;
+    }
+
+    .menu ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu ul li {
+      display: block;
+      width: 200px;
+      
+    }
+
+    .menu li:hover > ul {
+      display: inherit;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li style="background-color:rgb(160, 196, 255);width: 150px; font-size: 25px;"><a href="#" style=" color: white;">Thiết kế Web</a>
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    // Javascript cho menu
+    var menuItems = document.querySelectorAll('.menu li');
+
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].addEventListener('click', function(e) {
+        var subMenu = this.querySelector('ul');
+        if (subMenu) {
+          e.preventDefault();
+          subMenu.classList.toggle('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

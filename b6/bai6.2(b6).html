@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6.2</title>
+    <style>
+       body div {
+        width: 60%;
+        border: solid 2px rgb(69, 5, 5);
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+
+
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Calculator</h1>
+    <input type="number" id="num1" placeholder="Nhập số thứ nhất">
+    <input type="number" id="num2" placeholder="Nhập số thứ hai">
+    <button onclick="calculate('+')">Cộng</button>
+    <button onclick="calculate('-')">Trừ</button>
+    <button onclick="calculate('*')">Nhân</button>
+    <button onclick="calculate('/')">Chia</button>
+    <p id="result">Kết quả: </p>
+   </div>
+
+    <script>
+        function calculate(operator) {
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+    var result;
+
+    switch(operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+    }
+
+    document.getElementById("result").innerHTML = "Kết quả: " + result;
+}
+
+    </script>
+   
+</body>
+</html>
