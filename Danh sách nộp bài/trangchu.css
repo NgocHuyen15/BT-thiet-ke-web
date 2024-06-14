@@ -1,0 +1,127 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/04/18/36/milky-way-4526277_1280.jpg);
+    background-size: cover;
+
+}
+.menu {
+    display: flex;
+    background-color: #CCCCFF;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    float: right;
+
+}
+
+.menu li {
+    margin-right: 150px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    
+}
+
+.images {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    border-radius: 10px;
+    background-image: url('https://symbols.vn/wp-content/uploads/2021/12/Nhat-dinh-dung-bo-lo-Hinh-Anime-nu-dep-hiem-diu-dang.jpg');
+    background-size: cover;
+    margin: 5px;
+}
+
+.policer-thongtin {
+    display: inline-block;
+    background-color: #99FFFF;
+    width: 48%;
+    height: 350px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.policer-story {
+    background-color:#99FFFF;
+    width: 48%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    float: right;
+}
+
+.policer-address {
+    background-color: #99FFFF;
+    width: 48%;
+    height: 295px;
+    border-radius: 10px;
+    margin: 10px;
+    float: right;
+
+}
+
+.policer-links {
+    background-color:#99FFFF;
+    width: 48%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.policer-story p {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+
+}
+
+.policer-thongtin P {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+.policer-address P {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+.policer-address li {
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.policer-links p {
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+
+.policer-links li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.policer-links span {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+.policer-links a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
